@@ -23,16 +23,9 @@ totalwage=$(($WAGE_PER_HOUR * $FULL_TIME_HOUR))
 echo "The employee $employeename has a daily wage of $totalwage Rupees"
 }
 
-#branch parttimeemployeewage
-function parttimeemployeewage {
-PART_TIME_HOUR=4
-
-parttimewage=$(($WAGE_PER_HOUR * $PART_TIME_HOUR))
-
-echo "The part time employee $employeename has a daily wage of $parttimewage Rupees"
 
 #branch UC3
-
+function parttimeemployeewage {
 PART_TIME_HOUR=4
 
 parttimewage=$(($WAGE_PER_HOUR * $PART_TIME_HOUR))
