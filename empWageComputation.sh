@@ -44,7 +44,7 @@ case $option in
     ;;
 esac
 #branch UC5
-
+#branch UC6
 FULL_TIME_HOUR_PER_MONTH=100
 workeddays=1
 workedhours=1
@@ -57,4 +57,10 @@ do
 done
  echo "The monthly wage is $totalwagepermonth"
  echo "The daily wage is $totalwage"
- 
+ function calculateworkinghours {
+    workedhours=$((totalwagepermonth / ($WAGE_PER_HOUR * $FULL_TIME_HOUR)
+    echo "The working hours is $workedhours"
+}
+calculateworkinghours
+
+
