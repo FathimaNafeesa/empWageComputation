@@ -52,9 +52,9 @@ workeddays=1
 workedhours=1
 while [ $workeddays -le $WORKING_DAYS_PER_MONTH ] && [ $workedhours -le $FULL_TIME_HOUR_PER_MONTH ]
 do
-    totalwage=$(($WAGE_PER_HOUR * $workedhours)) 
+    totalwage = $(($WAGE_PER_HOUR * $workedhours)) 
     (($workedhours++))
-    totalwagepermonth=$(($WAGE_PER_HOUR * $workeddays * $FULL_TIME_HOUR)) 
+    totalwagepermonth = $(($WAGE_PER_HOUR * $workeddays * $FULL_TIME_HOUR)) 
     (($workeddays++))
 done
  echo "The monthly wage is $totalwagepermonth"
