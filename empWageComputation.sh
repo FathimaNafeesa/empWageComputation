@@ -24,7 +24,7 @@ echo "The employee $employeename has a daily wage of $totalwage Rupees"
 }
 
 #branch parttimeemployeewage
-function parttimeemployeewage {
+
 PART_TIME_HOUR=4
 
 parttimewage=$(($WAGE_PER_HOUR * $PART_TIME_HOUR))
