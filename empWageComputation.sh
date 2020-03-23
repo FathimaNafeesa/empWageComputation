@@ -65,3 +65,10 @@ function calculateworkinghours {
     echo "The working hours is $workedhours"
 }
 calculateworkinghours
+#branch UC8
+declare -a totalwagetilladay
+for((workingday=1;workingday<=20;workingday++))
+do
+    totalwagetilladay[workingday]=$(($totalwage * $workingday))
+done
+echo "${totalwagetilladay[@]}"
