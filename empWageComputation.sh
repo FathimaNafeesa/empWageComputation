@@ -58,4 +58,8 @@ done
  echo "The monthly wage is $totalwagepermonth"
  echo "The daily wage is $totalwage"
  
-
+function calculateworkinghours {
+    workedhours=$((totalwagepermonth / ($WAGE_PER_HOUR * $FULL_TIME_HOUR)
+    echo "The working hours is $workedhours"
+}
+calculateworkinghours
